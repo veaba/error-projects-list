@@ -1,0 +1,40 @@
+{
+  "name": "modern-bff",
+  "version": "0.1.0",
+  "scripts": {
+    "reset": "npx rimraf node_modules ./**/node_modules",
+    "dev": "modern dev",
+    "build": "modern build",
+    "start": "modern start",
+    "serve": "modern serve",
+    "new": "modern new",
+    "upgrade": "modern upgrade"
+  },
+  "engines": {
+    "node": ">=16.18.1"
+  },
+  "dependencies": {
+    "@modern-js/plugin-bff": "2.62.1",
+    "@modern-js/plugin-koa": "2.62.1",
+    "@modern-js/runtime": "2.62.1",
+    "@octokit/auth-oauth-user": "^5.1.1",
+    "koa": "~2.15.3",
+    "koa-body": "^6.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@modern-js/app-tools": "2.62.1",
+    "@modern-js/tsconfig": "2.62.1",
+    "@types/jest": "~29.2.4",
+    "@types/koa": "~2.15.0",
+    "@types/node": "~18.11.9",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "~18.3.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "~10.8.1",
+    "tsconfig-paths": "~3.14.1",
+    "typescript": "~5.0.4"
+  }
+}
