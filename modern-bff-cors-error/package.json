@@ -1,0 +1,38 @@
+{
+  "name": "modern-bff-cors-error",
+  "author": "veaba",
+  "scripts": {
+    "dev": "modern dev",
+    "client": "npx http-server -p 8080"
+  },
+  "dependencies": {
+    "@arco-plugins/unplugin-react": "^1.0.2",
+    "@modern-js/plugin-bff": "2.60.2",
+    "@modern-js/plugin-koa": "2.60.2",
+    "@modern-js/runtime": "2.60.2",
+    "@types/koa2-cors": "^2.0.5",
+    "koa2-cors": "^2.0.6",
+    "react": "~18.3.1",
+    "react-dom": "~18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@modern-js/app-tools": "2.62.1",
+    "@modern-js/tsconfig": "2.62.1",
+    "@types/koa": "~2.15.0",
+    "@types/node": "~22.9.3",
+    "lint-staged": "~15.2.10",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.15",
+    "ts-node": "~10.8.1"
+  },
+  "engines": {
+    "node": ">=16.18.1"
+  },
+  "lint-staged2": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --files-ignore-unknown=true"
+    ]
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+}

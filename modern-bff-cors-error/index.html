@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document client </title>
+
+</head>
+
+<body>
+  <script>
+
+    const fetchAPIPost = async () => {
+      console.log('fetchAPIPost');
+      const res = await fetch('http://127.0.0.1:8081/api/hello', {
+        method: 'POST',
+        mode: 'cors',
+        // If I remove the headers field, the cross-domain works, but with it, it doesn't.
+        headers: {
+          'X1-Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          a: 'xx',
+        }),
+      });
+
+      const resJSON = await res.json();
+
+      console.log('post resJSON=>', resJSON);
+    }
+
+    fetchAPIPost()
+
+  </script>
+</body>
+
+</html>
